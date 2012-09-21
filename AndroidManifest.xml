@@ -21,6 +21,7 @@
      to come from a domain that you own or have control over. -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android.snake">
+    <uses-sdk android:minSdkVersion="10"></uses-sdk>
     <application android:label="Snake on a Phone">
       <activity android:name="Snake"
         android:theme="@android:style/Theme.NoTitleBar"

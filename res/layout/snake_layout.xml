@@ -17,13 +17,22 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent">
-	
+
 	<com.example.android.snake.SnakeView
 	 android:id="@+id/snake"
 		android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 tileSize="24"
                 />
+
+    <com.example.android.snake.DPadView android:id="@+id/dpad_view"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:layout_weight="1"
+               android:scaleType="centerInside"
+               android:padding="10dip"
+               />
+
 	
 	<RelativeLayout
 		android:layout_width="match_parent"

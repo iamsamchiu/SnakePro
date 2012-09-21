@@ -33,6 +33,7 @@ import android.widget.TextView;
 public class Snake extends Activity {
 
     private SnakeView mSnakeView;
+    private DPadView mDpadView;
     
     private static String ICICLE_KEY = "snake-view";
 
@@ -49,6 +50,9 @@ public class Snake extends Activity {
 
         mSnakeView = (SnakeView) findViewById(R.id.snake);
         mSnakeView.setTextView((TextView) findViewById(R.id.text));
+        
+        mDpadView = (DPadView) findViewById(R.id.dpad_view);
+        mDpadView.setParentView(mSnakeView);
 
         if (savedInstanceState == null) {
             // We were just launched -- set up a new game
