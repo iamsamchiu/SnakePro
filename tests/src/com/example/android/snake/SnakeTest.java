@@ -16,6 +16,9 @@
 
 package com.example.android.snake;
 
+import com.example.android.snake.R;
+import com.example.android.snake.SnakeView;
+
 import android.test.ActivityInstrumentationTestCase2;
 
 /**
@@ -36,5 +39,10 @@ public class SnakeTest extends ActivityInstrumentationTestCase2<Snake> {
      */
     public void testActivityTestCaseSetUpProperly() {
         assertNotNull("activity should be launched successfully", getActivity());
+    }
+    
+    public void testTileSize(){
+    	//SnakeView mSnakeView = (SnakeView) findViewById(R.id.snake);
+    	//assert(SnakeView.mTileSize,24);
     }
 }

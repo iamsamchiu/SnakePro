@@ -23,6 +23,7 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 
@@ -70,6 +71,7 @@ public class TileView extends View {
         mTileSize = a.getInt(R.styleable.TileView_tileSize, 12);
         
         a.recycle();
+        Log.v("sam","TileView construct1 , mTileSize:"+mTileSize);
     }
 
     public TileView(Context context, AttributeSet attrs) {
@@ -80,6 +82,12 @@ public class TileView extends View {
         mTileSize = a.getInt(R.styleable.TileView_tileSize, 12);
         
         a.recycle();
+        
+        Log.v("sam","TileView construct2 , mTileSize:"+mTileSize);
+        
+        
+        String attrib1 = attrs.getAttributeValue(null, "tileSize");
+        Log.v("sam","TileView construct2 , attrib1:"+attrib1);
     }
 
     
@@ -106,6 +114,11 @@ public class TileView extends View {
 
         mTileGrid = new int[mXTileCount][mYTileCount];
         clearTiles();
+        Log.v("sam","onSizeChanged,w:"+w);
+        Log.v("sam","onSizeChanged,h:"+h);
+        Log.v("sam","mTileSize:"+mTileSize);
+        Log.v("sam","mXTileCount:"+mXTileCount);
+        Log.v("sam","mTileGrid:"+mTileGrid);
     }
 
     /**

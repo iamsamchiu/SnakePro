@@ -21,6 +21,7 @@ import java.util.Random;
 
 import android.content.Context;
 import android.content.res.Resources;
+import android.content.res.TypedArray;
 import android.os.Handler;
 import android.os.Message;
 import android.util.AttributeSet;
@@ -126,7 +127,7 @@ public class SnakeView extends TileView {
      * @param attrs
      */
     public SnakeView(Context context, AttributeSet attrs) {
-        super(context, attrs);
+        super(context, attrs);        
         initSnakeView();
    }
 
